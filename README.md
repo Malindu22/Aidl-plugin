@@ -1,4 +1,4 @@
-# Bluetooth Serial Plugin for PhoneGap
+<!-- # Bluetooth Serial Plugin for PhoneGap
 
 This plugin enables serial communication over Bluetooth. It was written for communicating between Android or iOS and an Arduino.
 
@@ -728,4 +728,4 @@ An example a properly formatted mac address is ``AA:BB:CC:DD:EE:FF``
 
 ## Feedback
 
-Try the code. If you find an problem or missing feature, file an issue or create a pull request.
+Try the code. If you find an problem or missing feature, file an issue or create a pull request. -->
