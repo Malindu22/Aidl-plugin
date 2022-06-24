@@ -4,7 +4,7 @@
     "description": "Cordova iPosPrinter Service",
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/Malindu22/Aidl-plugin.git"
+        "url": "git+https://github.com/Malindu22/cordova-plugin-ipos-printer.git"
     },
     "keywords": [
         "cordova-android",
@@ -25,7 +25,7 @@
     },
     "license": "Apache-2.0",
   "bugs": {
-    "url": "https://github.com/Malindu22/Aidl-plugin/issues"
+    "url": "https://github.com/Malindu22/cordova-plugin-ipos-printer/issues"
   },
-  "homepage": "https://github.com/Malindu22/Aidl-plugin#readme"
+  "homepage": "https://github.com/Malindu22/cordova-plugin-ipos-printer#readme"
 }
