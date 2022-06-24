@@ -17,7 +17,7 @@ import org.apache.cordova.CordovaWebView;
 import org.json.JSONArray;
 import org.json.JSONException;
 
-public class IPosPrinter extends CordovaPlugin {
+public class IposPrinter extends CordovaPlugin {
     private IPosPrinterService iPosPrinterService;
 
     @Override

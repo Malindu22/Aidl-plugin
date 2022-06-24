@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0" id="cordova-plugin-iposprinter" version="2.0.0">
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0" id="cordova-plugin-ipos-printer" version="2.0.0">
     <name>IPosPrinter Service Cordova Plugin</name>
     <description>Cordova iPosPrinter Service</description>
     <license>Apache 2.0</license>
     <keywords>android,thermal,printer,esc,pos,esc/pos,iposprinter,iposprinterservice</keywords>
-    <js-module src="www/iposprinter.js" name="IPosPrinter">
-        <clobbers target="IPosPrinter"/>
+    <js-module src="www/iposPrinter.js" name="iposPrinter">
+        <clobbers target="iposPrinter"/>
     </js-module>
     <platform name="android">
         <config-file target="res/xml/config.xml" parent="/*">
-            <feature name="IPosPrinter">
-                <param name="android-package" value="com.mgdisc.IPosPrinter"/>
+            <feature name="IposPrinter">
+                <param name="android-package" value="com.mgdisc.IposPrinter"/>
                 <param name="onload" value="true"/>
             </feature>
         </config-file>
 
-        <source-file src="src/android/com/mgdisc/IPosPrinter.java" target-dir="src/com/mgdisc"/>
+        <source-file src="src/android/com/mgdisc/IposPrinter.java" target-dir="src/com/mgdisc"/>
         <source-file src="src/aidl/iposprinterservice/IPosPrinterCallback.aidl"
                      target-dir="src/com/iposprinter/iposprinterservice"/>
         <source-file src="src/aidl/iposprinterservice/IPosPrinterService.aidl"

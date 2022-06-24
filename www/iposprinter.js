@@ -14,7 +14,7 @@ module.exports = {
      */
     getPrinterStatus() {
         return new Promise(function (resolve, reject) {
-            cordova.exec(resolve, reject, 'IPosPrinter', 'getPrinterStatus', []);
+            cordova.exec(resolve, reject, 'IposPrinter', 'getPrinterStatus', []);
         });
     },
 
@@ -25,7 +25,7 @@ module.exports = {
      */
     printerInit() {
         return new Promise(function (resolve, reject) {
-            cordova.exec(resolve, reject, 'IPosPrinter', 'printerInit', []);
+            cordova.exec(resolve, reject, 'IposPrinter', 'printerInit', []);
         });
     },
 
@@ -35,7 +35,7 @@ module.exports = {
      */
     setPrinterPrintDepth(depth) {
         return new Promise(function (resolve, reject) {
-            cordova.exec(resolve, reject, 'IPosPrinter', 'setPrinterPrintDepth', [depth]);
+            cordova.exec(resolve, reject, 'IposPrinter', 'setPrinterPrintDepth', [depth]);
         });
     },
 
@@ -46,7 +46,7 @@ module.exports = {
      */
     setPrinterPrintFontType(typeface) {
         return new Promise(function (resolve, reject) {
-            cordova.exec(resolve, reject, 'IPosPrinter', 'setPrinterPrintFontType', [typeface]);
+            cordova.exec(resolve, reject, 'IposPrinter', 'setPrinterPrintFontType', [typeface]);
         });
     },
 
@@ -59,7 +59,7 @@ module.exports = {
      */
     setPrinterPrintFontSize(fontsize) {
         return new Promise(function (resolve, reject) {
-            cordova.exec(resolve, reject, 'IPosPrinter', 'setPrinterPrintFontSize', [fontsize]);
+            cordova.exec(resolve, reject, 'IposPrinter', 'setPrinterPrintFontSize', [fontsize]);
         });
     },
 
@@ -69,7 +69,7 @@ module.exports = {
      */
     setPrinterPrintAlignment(alignment) {
         return new Promise(function (resolve, reject) {
-            cordova.exec(resolve, reject, 'IPosPrinter', 'setPrinterPrintAlignment', [alignment]);
+            cordova.exec(resolve, reject, 'IposPrinter', 'setPrinterPrintAlignment', [alignment]);
         });
     },
 
@@ -79,7 +79,7 @@ module.exports = {
      */
     printerFeedLines(lines) {
         return new Promise(function (resolve, reject) {
-            cordova.exec(resolve, reject, 'IPosPrinter', 'printerFeedLines', [lines]);
+            cordova.exec(resolve, reject, 'IposPrinter', 'printerFeedLines', [lines]);
         });
     },
 
@@ -90,7 +90,7 @@ module.exports = {
      */
     printBlankLines(lines, height = 1) {
         return new Promise(function (resolve, reject) {
-            cordova.exec(resolve, reject, 'IPosPrinter', 'printBlankLines', [lines, height]);
+            cordova.exec(resolve, reject, 'IposPrinter', 'printBlankLines', [lines, height]);
         });
     },
 
@@ -101,7 +101,7 @@ module.exports = {
      */
     printText(text) {
         return new Promise(function (resolve, reject) {
-            cordova.exec(resolve, reject, 'IPosPrinter', 'printText', [text]);
+            cordova.exec(resolve, reject, 'IposPrinter', 'printText', [text]);
         });
     },
 
@@ -114,7 +114,7 @@ module.exports = {
      */
     printSpecifiedTypeText(text, typeface = 'ST', fontsize = 24) {
         return new Promise(function (resolve, reject) {
-            cordova.exec(resolve, reject, 'IPosPrinter', 'printSpecifiedTypeText', [text, typeface, fontsize]);
+            cordova.exec(resolve, reject, 'IposPrinter', 'printSpecifiedTypeText', [text, typeface, fontsize]);
         });
     },
 
@@ -128,7 +128,7 @@ module.exports = {
      */
     printSpecFormatText(text, typeface = 'ST', fontsize = 24, alignment = 0) {
         return new Promise(function (resolve, reject) {
-            cordova.exec(resolve, reject, 'IPosPrinter', 'printSpecFormatText', [text, typeface, fontsize, alignment]);
+            cordova.exec(resolve, reject, 'IposPrinter', 'printSpecFormatText', [text, typeface, fontsize, alignment]);
         });
     },
 
@@ -143,7 +143,7 @@ module.exports = {
      */
     printColumnsText(colsTextArr, colsWidthArr, colsAlign, isContinuousPrint) {
         return new Promise(function (resolve, reject) {
-            cordova.exec(resolve, reject, 'IPosPrinter', 'printColumnsText', [colsTextArr, colsWidthArr, colsAlign, isContinuousPrint]);
+            cordova.exec(resolve, reject, 'IposPrinter', 'printColumnsText', [colsTextArr, colsWidthArr, colsAlign, isContinuousPrint]);
         });
     },
 
@@ -155,7 +155,7 @@ module.exports = {
      */
     printBitmap(alignment = 1, bitmapSize = 10, mBitmap) {
         return new Promise(function (resolve, reject) {
-            cordova.exec(resolve, reject, 'IPosPrinter', 'printBitmap', [alignment, bitmapSize, mBitmap]);
+            cordova.exec(resolve, reject, 'IposPrinter', 'printBitmap', [alignment, bitmapSize, mBitmap]);
         });
     },
 
@@ -178,7 +178,7 @@ module.exports = {
      */
     printBarCode(data, symbology, height = 6, width = 12, textposition = 0) {
         return new Promise(function (resolve, reject) {
-            cordova.exec(resolve, reject, 'IPosPrinter', 'printBarCode', [data, symbology, height, width, textposition]);
+            cordova.exec(resolve, reject, 'IposPrinter', 'printBarCode', [data, symbology, height, width, textposition]);
         });
     },
 
@@ -190,7 +190,7 @@ module.exports = {
      */
     printQRCode(data, modulesize = 10, mErrorCorrectionLevel = 2) {
         return new Promise(function (resolve, reject) {
-            cordova.exec(resolve, reject, 'IPosPrinter', 'printQRCode', [data, modulesize, mErrorCorrectionLevel]);
+            cordova.exec(resolve, reject, 'IposPrinter', 'printQRCode', [data, modulesize, mErrorCorrectionLevel]);
         });
     },
 
@@ -200,7 +200,7 @@ module.exports = {
      */
     printRawData(rawPrintData) {
         return new Promise(function (resolve, reject) {
-            cordova.exec(resolve, reject, 'IPosPrinter', 'printRawData', [rawPrintData]);
+            cordova.exec(resolve, reject, 'IposPrinter', 'printRawData', [rawPrintData]);
         });
     },
 
@@ -210,7 +210,7 @@ module.exports = {
      */
     sendUserCMDData(data) {
         return new Promise(function (resolve, reject) {
-            cordova.exec(resolve, reject, 'IPosPrinter', 'sendUserCMDData', [data]);
+            cordova.exec(resolve, reject, 'IposPrinter', 'sendUserCMDData', [data]);
         });
     },
 
@@ -222,7 +222,7 @@ module.exports = {
      */
     printerPerformPrint(feedlines = 150) {
         return new Promise(function (resolve, reject) {
-            cordova.exec(resolve, reject, 'IPosPrinter', 'printerPerformPrint', [feedlines]);
+            cordova.exec(resolve, reject, 'IposPrinter', 'printerPerformPrint', [feedlines]);
         });
     }
 };
