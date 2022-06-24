@@ -4,7 +4,7 @@
 
 #### Ionic
 
-    $ ionic cordova plugin add https://github.com/Malindu22/Aidl-plugin.git
+    $ ionic cordova plugin add https://github.com/Malindu22/cordova-plugin-ipos-printer.git
 
 ### Functions
 
