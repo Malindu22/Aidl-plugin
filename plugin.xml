@@ -1,43 +1,24 @@
-<?xml version="1.0" encoding="utf-8"?>
-<plugin
-    xmlns="http://www.phonegap.com/ns/plugins/1.0"
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    id="cordova-plugin-background"
-    version="0.4.7">
-
-    <name>Aidl</name>
-    <description>Aidl Communication Plugin</description>
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0" id="cordova-plugin-iposprinter" version="2.0.0">
+    <name>IPosPrinter Service Cordova Plugin</name>
+    <description>Cordova iPosPrinter Service</description>
     <license>Apache 2.0</license>
-    <keywords>aidl,service</keywords>
-    <repo>https://github.com/Malindu22/Aidl-plugin.git</repo>
-    <issue>https://github.com/Malindu22/Aidl-plugin/issues</issue>
-
-   
-  <platform name="android">
-        <js-module src="www/background-mode.js" name="BackgroundMode">
-            <clobbers target="window.BackgroundMode" />
-        </js-module>
-
-        <config-file target="res/xml/config.xml" parent="/widget">
-            <feature name="AidlService">
-                <param name="android-package" value="com.mgdisc.AidlService"/>
+    <keywords>android,thermal,printer,esc,pos,esc/pos,iposprinter,iposprinterservice</keywords>
+    <js-module src="www/iposprinter.js" name="IPosPrinter">
+        <clobbers target="IPosPrinter"/>
+    </js-module>
+    <platform name="android">
+        <config-file target="res/xml/config.xml" parent="/*">
+            <feature name="IPosPrinter">
+                <param name="android-package" value="com.mgdisc.IPosPrinter"/>
+                <param name="onload" value="true"/>
             </feature>
         </config-file>
 
-        <config-file target="res/xml/config.xml" parent="/*">
-            <preference name="KeepRunning" value="true" />
-        </config-file>
-
-        <config-file target="AndroidManifest.xml" parent="/manifest/application">
-            <service android:name="com.mgdisc.AidlService" />
-        </config-file>
-
-        <config-file target="AndroidManifest.xml" parent="/manifest">
-            <uses-permission android:name="android.permission.WAKE_LOCK" />
-        </config-file>
-
-    <source-file src="src/android/AidlService.java" target-dir="src/com/mgdisc" />
-    <source-file src="src/android/Aidl/IPosPrinterCallback.aidl" target-dir="src/com/iposprinter/iposprinterservice" />
-    <source-file src="src/android/Aidl/IPosPrinterServicez.aidl" target-dir="src/com/iposprinter/iposprinterservice" />
-  </platform>
+        <source-file src="src/android/com/mgdisc/IPosPrinter.java" target-dir="src/com/mgdisc"/>
+        <source-file src="src/aidl/iposprinterservice/IPosPrinterCallback.aidl"
+                     target-dir="src/com/iposprinter/iposprinterservice"/>
+        <source-file src="src/aidl/iposprinterservice/IPosPrinterService.aidl"
+                     target-dir="src/com/iposprinter/iposprinterservice"/>
+    </platform>
 </plugin>

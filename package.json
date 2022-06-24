@@ -1,26 +1,29 @@
 {
-  "name": "cordova-plugin-aidl",
-  "version": "0.4.7",
-  "description": "Aidl Plugin",
-  "main": "./www/bluetoothSerial.js",
-  "cordova": {
-    "id": "cordova-plugin-aidl-",
-    "platforms": [
-      "android"
-    ]
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Malindu22/Aidl-plugin.git"
-  },
-  "keywords": [
-    "cordova",
-    "Aidl",
-    "service",
-    "ecosystem:cordova"
-  ],
-  "author": "Malindu Gimhan <malindu.gimhan18@gmail.com>",
-  "license": "Apache-2.0",
+    "name": "cordova-plugin-iposprinter",
+    "version": "2.0.0",
+    "description": "Cordova iPosPrinter Service",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/Malindu22/Aidl-plugin.git"
+    },
+    "keywords": [
+        "cordova-android",
+        "thermal",
+        "printer",
+        "cordova",
+        "plugin",
+        "esc",
+        "pos",
+        "esc/pos",
+        "iposprinter",
+        "iposprinterservice"
+    ],
+    "author": {
+        "name": "Malindu Gimhan",
+        "email": "malindu.gimhan18@gmail.com",
+        "url": "https://github.com/Malindu22"
+    },
+    "license": "Apache-2.0",
   "bugs": {
     "url": "https://github.com/Malindu22/Aidl-plugin/issues"
   },
