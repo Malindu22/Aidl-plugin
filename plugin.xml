@@ -8,7 +8,7 @@
         <clobbers target="iposPrinter"/>
     </js-module>
     <platform name="android">
-        <config-file target="res/xml/config.xml" parent="/*">
+        <config-file target="res/xml/config.xml" parent="/widget">
             <feature name="IposPrinter">
                 <param name="android-package" value="com.mgdisc.IposPrinter"/>
                 <param name="onload" value="true"/>

@@ -2,6 +2,13 @@
     "name": "cordova-plugin-ipos-printer",
     "version": "2.0.0",
     "description": "Cordova iPosPrinter Service",
+    "main": "./www/iposPrinter.js",
+    "cordova": {
+      "id": "cordova-plugin-ipos-printer",
+      "platforms": [
+        "android"
+      ]
+    },
     "repository": {
         "type": "git",
         "url": "git+https://github.com/Malindu22/cordova-plugin-ipos-printer.git"
